@@ -1,0 +1,39 @@
+1- 
+CREATE TABLE shopping (id INTEGER PRIMARY KEY, name TEXT, amount
+INTEGER); 
+יוצר טבלה חדשה עמודות : 'מס זהות' (סוג קלט: INT) מוגדר כמפתח ראשי, 'שם' (txt-str)
+ו'סכום' (int)
+DROP TABLE shopping --- מוחק את הטבלה
+2. Rename table:
+ALTER table shopping RENAME to shop--- משנה את שם הטבלה ל "shop"
+ALTER table shopp RENAME to shopping ----- משנה את השם ל"shopping"
+3. Insert rows into table:
+INSERT INTO shopping VALUES (1, 'Avokado', 5); ----- מוסיף לשורה ל ID =1 ,
+ל"name" = "avocado"    לסכום = 5 
+2. Rename table:
+ALTER table shopping RENAME to shop--- משנה את שם הטבלה ל "shop"
+ALTER table shopp RENAME to shopping ----- משנה את השם ל"shopping"
+3. Insert rows into table:
+INSERT INTO shopping VALUES (1, 'Avokado', 5); ----- מוסיף לשורה ל ID =1 ,
+ל"name" = "avocado"    לסכום = 5 
+INSERT INTO shopping VALUES (2, 'Milk', 2); id = 2, name = milk, amount= 2
+INSERT INTO shopping VALUES (3, 'Bread', 3); id = 3 , name = bread, amount= 3
+INSERT INTO shopping VALUES (4, 'Chocolate', 8); id = 4 , name = chocolate, amount=8
+INSERT INTO shopping VALUES (5, 'Bamba', 5); id = 5 , name = bamba, amount= 5
+INSERT INTO shopping VALUES (6, 'Orange', 10); id = 6 , name =orange, amount= 10
+4. Display table:
+select * from shopping
+5. ? מציג את כל הטבלה
+SELECT id, name FROM shopping
+6. ? מציג את עמודות 'id' and 'name'
+SELECT * FROM shopping WHERE amount > 5 --- מציג מכל הטבלה את הערכים הגדולים מ5 בעמודה 'amount'
+SELECT * FROM shopping WHERE amount = 2 -- מציג מכל הטבלה את הערכים השווים ל 2 בעמודה 'amount'
+SELECT * FROM shopping WHERE name LIKE 'Bamba'
+7. ? --  מציג מכל הטבלה את השורות שבהם השם הוא במבה
+
+INSERT INTO shopping VALUES (3, 'Bread', 3); id = 3 , name = bread, amount= 3
+INSERT INTO shopping VALUES (4, 'Chocolate', 8); id = 4 , name = chocolate, amount=8
+INSERT INTO shopping VALUES (5, 'Bamba', 5); id = 5 , name = bamba, amount= 5
+INSERT INTO shopping VALUES (6, 'Orange', 10); id = 6 , name =orange, amount= 10
+
+
